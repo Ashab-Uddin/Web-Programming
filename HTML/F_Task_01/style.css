@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+td {
+  padding: 10px 20px;
+}
+.Xpath {
+  padding-bottom: 10px;
+  position: absolute;
+  top: 30%;
+  border: 1px solid white;
+  width: 185px;
+}
+
+.XSL {
+  position: absolute;
+  top: 36%;
+  border-left: hidden;
+  border-bottom: hidden;
+  border-right: hidden;
+  border-top: 1px solid black;
+  width: 186px;
+  
+}

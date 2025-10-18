@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lab Report</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            border-radius: 0;
+        }
+
+        div {
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        ul, ol {
+            display: inline-block;
+            text-align: left;
+            padding-left: 40px; 
+        }
+
+        table {
+            margin: 10px auto;
+            border-collapse: collapse;
+            width: 80%;
+            transition: transform 0.3s;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 8px;
+            background-color: bisque;
+        }
+
+        tr {
+            background-color: rgb(243, 203, 151);
+        }
+
+        table:hover {
+            transform: scale(1.02);
+        }
+
+        input, select {
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        label[for="foods"] {
+            display: block; 
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(88, 12, 12);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(156, 72, 72);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Practice Report – Lists, Tables, and Forms</h1>
+
+    <div style="background-color: rgb(173, 182, 217);">
+        <h2>Beverage Options</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Green Tea</li>
+            <li>Chocolate Shake</li>
+        </ul>
+    </div>
+
+    <div style="background-color: rgb(166, 190, 189);">
+        <h2>Sweet Treats</h2>
+        <ol>
+            <li>KitKat</li>
+            <li>Dairy Milk Silk</li>
+            <li>Ferrero Rocher</li>
+        </ol>
+    </div>
+
+    <div style="background-color: rgb(199, 154, 120);">
+        <h2>Cafe Menu</h2>
+        <table>
+            <tr>
+                <th>Drinks</th>
+                <th>Desserts</th>
+                <th>Snacks</th>
+            </tr>
+            <tr>
+                <td>Lemonade</td>
+                <td>Brownie</td>
+                <td>Nachos</td>
+            </tr>
+            <tr>
+                <td>Cold Coffee</td>
+                <td>Chocolate Cake</td>
+                <td>Sandwich</td>
+            </tr>
+            <tr>
+                <td>Juice</td>
+                <td>Donut</td>
+                <td>French Fries</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="background-color: rgb(177, 107, 114);">
+        <form action="/action_page.php">
+            <h2>Select Complimentary Drink</h2>
+            <input type="radio" id="water" name="free_drinks" value="Water">
+            <label for="water">Mineral Water</label><br>
+            <input type="radio" id="coffee" name="free_drinks" value="Coffee">
+            <label for="coffee">Black Coffee</label><br>
+            <input type="radio" id="tea" name="free_drinks" value="Tea">
+            <label for="tea">Green Tea</label><br><br>
+        </form>
+    </div>
+
+    <div style="background-color: rgb(123, 189, 169);">
+        <h2>Place Your Order</h2>
+        <form action="/action_page.php">
+            <input type="checkbox" id="food1" name="food1" value="Burger">
+            <label for="food1">Cheese Burger</label><br>
+            <input type="checkbox" id="food2" name="food2" value="Pizza">
+            <label for="food2">Margherita Pizza</label><br>
+            <input type="checkbox" id="food3" name="food3" value="Pasta">
+            <label for="food3">Spaghetti Pasta</label><br><br>
+
+            <label for="foods">Choose Rice Type:</label>
+            <select name="foods" id="foods">
+                <option value="fried_rice">Fried Rice</option>
+                <option value="biryani">Chicken Biryani</option>
+                <option value="plain_rice">Plain Rice</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+
+    <footer style="margin-top: 40px; background-color: #333; color: white; padding: 10px;">
+        <p>Developed by Ashab Uddin | HTML Lab Exercise</p>
+    </footer>
+</body>
+</html>
