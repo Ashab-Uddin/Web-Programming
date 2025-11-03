@@ -37,3 +37,9 @@ div{
     top: 0;
     position: sticky;
 }
+.gub{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
