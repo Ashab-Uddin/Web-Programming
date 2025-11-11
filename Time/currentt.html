@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Show time with Eventlisterne</title>
 </head>
 <body>
-    
+    <h2 id="currenttime">What time is it?</h2>
+    <button id="SeeTime">See Time</button>
+    <script>
+        document.getElementById('SeeTime').addEventListener('click',function(){
+            const ctime=document.getElementById('currenttime');
+            ctime.innerText=Date();
+        })
+    </script>
 </body>
-</html>
+</html> 
